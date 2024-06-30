@@ -38,7 +38,7 @@ ssl_context.verify_mode = ssl.CERT_NONE
 # Instanciation du client Elasticsearch avec le contexte SSL personnalisé
 es = Elasticsearch(
     ['https://localhost:9200'],
-    basic_auth=('elastic', 'k1j07vRorO+P2baQdW*Y'),
+    basic_auth=('elastic', 'k1j07vY'),
     ssl_context=ssl_context
 )
 
