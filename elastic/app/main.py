@@ -15,11 +15,11 @@ from pydantic import BaseModel, Field
 
 app = FastAPI()
 
-os.environ['no_proxy'] = "10.185.33.168,localhost,127.0.0.0/8,192.168.0.0/16,10.0.0.0/8,.mdp" 
+os.environ['no_proxy'] = "10.185.33.1" 
 
-os.environ['http_proxy'] = "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/"
+os.environ['http_proxy'] = "http://DMZ"
 
-os.environ['htpps_proxy'] = "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/"
+os.environ['htpps_proxy'] = "http://DMZ"
 
 
 
