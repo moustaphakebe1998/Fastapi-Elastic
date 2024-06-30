@@ -9,11 +9,11 @@ from elasticsearch import Elasticsearch
 import requests
 import os
 
-os.environ['no_proxy'] = "10.185.33.168,localhost,127.0.0.0/8,192.168.0.0/16,10.0.0.0/8,.mdp"
+os.environ['no_proxy'] = "1"
 # Définition des variables d'environnement pour le proxy
 proxies = {
-    "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-    "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+    "http": "ht",
+    "https": "http://",
 
 }
 
