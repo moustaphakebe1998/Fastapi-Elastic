@@ -40,7 +40,7 @@ async def add_process_time_header(request: Request, call_next):
 # Instanciation du client Elasticsearch avec le contexte SSL personnalisé
 es = Elasticsearch(
     ['https://10.185.33.241:9200'],
-    basic_auth=('elastic', 'uKtHTYHKvSlZj0loZnv*'),
+    basic_auth=('elastic', 'uKt'),
     verify_certs=False
 )
 
