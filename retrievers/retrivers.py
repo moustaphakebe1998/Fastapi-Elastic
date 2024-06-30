@@ -48,7 +48,7 @@ print(response.text)
 
 
 user_name = "elastic"
-password = 'k1j07vRorO+P2baQdW*Y'
+password = 'k1j07vR'
 elasticsearch_url = f"https://{user_name}:{password}@localhost:9200"
 
 # Instanciation de ElasticVectorSearch
