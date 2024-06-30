@@ -17,10 +17,10 @@ from langchain_elasticsearch import ElasticsearchStore
 from elasticsearch.helpers import bulk
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-os.environ['no_proxy'] = "10.185.33.168,localhost,127.0.0.0/8,192.168.0.0/16,10.0.0.0/8,.mdp"
+os.environ['no_proxy'] = "10."
 proxies = {
-    "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-    "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+    "http": "http://DMZ-/",
+    "https": "http://",
 
 }
 # URL de destination
