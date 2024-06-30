@@ -1,0 +1,6 @@
+fastapi
+elasticsearch
+uvicorn
+pydantic
+requests
+langchain_elasticsearch
