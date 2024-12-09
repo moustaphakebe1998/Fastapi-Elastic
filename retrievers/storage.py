@@ -85,8 +85,8 @@ if not es.indices.exists(index=index_name):
 def generate_embeddings(texts,index_name):
     url = "https://148.253.76.61/camembert"
     proxies = {
-        "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-        "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+        "http": "http://DMZ-PXSE",
+        "https": "http://DMZ-PXSERVE",
     }
     #headers = {'Content-Type': 'application/json'} , headers=headers
     for text in texts:
@@ -111,8 +111,7 @@ def generate_embeddings(texts,index_name):
     headers = {'Content-Type': 'application/json'}
     actions = []
     proxies = {
-        "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-        "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+        "http": "http://DMZ-PXSERV"",
     }
     for text in texts:
         file = {"texts": [text.page_content]}
