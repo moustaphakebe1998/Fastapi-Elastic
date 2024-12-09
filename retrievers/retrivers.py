@@ -57,8 +57,8 @@ def generate_embeddings(texts):
     url = "https://148.253.76.61/camembert"
     proxies = {
 
-        "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-        "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+        "http": "http://DMZ-PXSERVER.",
+        "https": "http://DMZ-PXS",
     }
     data= []
     for text in texts:
@@ -104,8 +104,8 @@ class ElasticsearchRetriever:
 def text_to_vector(text):
     url = "https://148.253.76.61/camembert"
     proxies = {
-        "http": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
-        "https": "http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/",
+        "http": "http://DMZ-PXS",
+        "https": "http://DMZ-PXSERVE",
     }
     response = requests.post(url, json={"texts":[text]}, proxies=proxies, verify=False)
     if response.status_code == 200:
