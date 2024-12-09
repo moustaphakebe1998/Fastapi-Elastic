@@ -2,9 +2,9 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 # Configuration des proxies
-ENV http_proxy=http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/
-ENV https_proxy=http://DMZ-PXSERVER.APPS.PARIS.MDP:8080/
-ENV no_proxy=ressources.paris.mdp,cmp.paris.mdp
+ENV http_proxy=http://DMZ
+ENV https_proxy=http://DMZ
+ENV no_proxy=ressources.pa
 
 # Définir le répertoire de travail
 WORKDIR /app
