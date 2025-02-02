@@ -30,9 +30,3 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 # EXPOSE 8443
 
 # Lancer l'application avec Uvicorns
-
-#CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8443", "--ssl-certfile", "/app/cert/cert.pem", "--ssl-keyfile", "/app/cert/cert.key"]
-
-# openssl genpkey -algorithm RSA -out cert.key
-# openssl req -new -key cert.key -x509 -days 365 -out cert.pem -subj '/CN=z46-pr-i1-tmp02.cmp.paris.mdp/OU=Fabric/O=MDP/L=Paris/ST=Iledefrance/C=FR' -addext 'subjectAltName = DNS:z46-dv-i1-tmp02.cmp.paris.mdp,DNS:z46-dv-i1-tmp01.cmp.paris.mdp,DNS:z46-dv-i1-app01.cmp.paris.mdp'
-
