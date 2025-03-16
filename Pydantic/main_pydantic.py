@@ -80,3 +80,4 @@ if __name__ == "__main__":
         print("Validated data has been saved to 'validated_data.csv' and 'to.parquet'.")
 
 # you can run the script with the following command: python main_pydantic.py codification_parc.csv
+#git pull origin main --rebase
